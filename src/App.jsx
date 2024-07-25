@@ -25,6 +25,7 @@ import one from "../src/assets/posture.webp";
 import two from "../src/assets/obese.webp";
 import three from "../src/assets/slim.webp";
 import four from "../src/assets/medium-shot-man-working-gym-1-scaled.webp";
+import red from '../src/assets/Black and Red Gyms Back to Business Portrait Banner.png'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,7 +52,7 @@ function App() {
         <img className="w-full" src={banner} alt="" />
       </div>
       <img
-        className=""
+        className="container mx-auto"
         src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
         alt=""
       />
@@ -260,12 +261,15 @@ function App() {
         <img className="w-[420px] h-[400px]" src={man6} alt="" />
       </section>
       {/* -------------------------------------------------------------------------------------- */}
+      {/* Background design */}
       {/* <img src="https://i.ibb.co/xG92BJS/top.png" alt="" /> */}
       <section className="services  bg-fixed py-48 px-60 mt-24">
         <div className="flex items-center justify-between gap-72">
           <div className="flex items-center">
             <img className="w-[400px]" src={og} alt="" />
             <img className="w-[400px]" src={green} alt="" />
+            {/* <img className="w-[400px]" src={red} alt="" /> */}
+            
           </div>
 
           <div>
@@ -283,7 +287,7 @@ function App() {
         </div>
       </section>
       <img
-        className=""
+        className="container mx-auto"
         src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
         alt=""
       />
@@ -359,12 +363,12 @@ function App() {
           </div>
         </div>
       </section>
-      <img className="" src="https://i.ibb.co/xG92BJS/top.png" alt="" />
+      <img className=" container mx-auto" src="https://i.ibb.co/xG92BJS/top.png" alt="" />
 
       {/* ------------------------------------------------------------------------------------------ */}
 
       {/* -------------------------------------------------------------------------------------- */}
-      <footer className="mt-32">
+      <footer className="mt-32 container mx-auto">
         <img src={footer} alt="" />
       </footer>
     </section>
