@@ -10,7 +10,7 @@ background: linear-gradient(171deg, rgba(44,45,47,1) 48%, rgba(72,95,120,1) 100%
 
 .pack{
   background: rgb(68,18,5);
-background: linear-gradient(320deg, rgba(68,18,5,1) 48%, rgba(36,52,70,1) 100%);
+  background: linear-gradient(320deg, rgba(68,18,5,1) 18%, rgba(68,18,5,1) 38%, rgba(32,11,25,1) 58%, rgba(36,52,70,1) 100%);
 }
 
 .services{
