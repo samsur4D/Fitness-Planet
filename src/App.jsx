@@ -29,10 +29,12 @@ import red from '../src/assets/Black and Red Gyms Back to Business Portrait Bann
 
 function App() {
   const [count, setCount] = useState(0);
+  
 
   return (
     <section className="overflow-hidden">
       {/* -------------------------------------------------------------------------------------- */}
+      {/* nav bar */}
       <nav className="flex items-center justify-between mb-12 py-3 container mx-auto">
         <div>
           <h1 className="font-samu text-3xl font-bold text-red-700">
@@ -48,6 +50,7 @@ function App() {
         </div>
       </nav>
       {/* -------------------------------------------------------------------------------------- */}
+      {/* banner */}
       <div className="container mx-auto">
         <img className="w-full" src={banner} alt="" />
       </div>
@@ -56,10 +59,33 @@ function App() {
         src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
         alt=""
       />
+      {/* two button */}
+      <div className="flex items-center text-center justify-center mt-5 gap-32">
+      <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+<span className="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
+<span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+<span className="relative px-5 text-white">Join Us</span>
+</span>
+</a>
+      <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+<span className="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
+<span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+<span className="relative text-white">our Package</span>
+</span>
+</a>
+      </div>
+      {/* two button */}
+      <section className="pack container mx-auto ">
+         <div className=" px-32 flex items-center justify-center py-32 ">
+         <img className="h-[900px]" src={og} alt="" />
+         <img className="h-[900px]" src={red} alt="" />
+         <img className="h-[900px]" src={green} alt="" />
+         </div>
+      </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* Change Your Habits */}
       <div className="text-white mt-12 container mx-auto text-center">
-        <h1 className="text-5xl font-bold mb-4">Change Your Habits</h1>
+        <h1 className=" text-5xl font-bold mb-4">Change Your Habits</h1>
         <p>
           We believe fitness should be accessible to everyone, everywhere,
           regardless of income or access to a gym.
@@ -69,7 +95,7 @@ function App() {
       <div className="flex items-center gap-5 justify-evenly mt-12 container mx-auto">
         {/* pic-1 */}
         <div className=" ">
-          <img className="ml-24 rounded-full" src={pic1} alt="" />
+          <img className=" ml-24 rounded-full" src={pic1} alt="" />
           <h1 className="font-samu text-red-600 ml-32 font-bold text-xl mb-2">
             Movement
           </h1>
@@ -79,7 +105,7 @@ function App() {
         </div>
         <div className=" ">
           <img className="ml-24 rounded-full" src={pic2} alt="" />
-          <h1 className="text-red-600 font-samu ml-40 font-bold text-xl mb-2">
+          <h1 className="text-red-600 font-samu ml-40 font-bold text-xl mb-2 tracking-in-expand">
             Time
           </h1>
           <p className="text-white">
@@ -250,15 +276,15 @@ function App() {
 
       <section className="grid grid-cols-3 container mx-auto gap-10 mt-12 bg-gray-800 px-10 py-10 rounded-2xl">
         <img
-          className="hover:scale-[1.10] w-[420px] h-[400px]"
+          className="hover:scale-[1.10] w-[420px] h-[400px] jello-diagonal-2 "
           src={man1}
           alt=""
         />
-        <img className="w-[420px] h-[400px]" src={man2} alt="" />
-        <img className="w-[420px] h-[400px]" src={man3} alt="" />
-        <img className="w-[420px] h-[400px]" src={man4} alt="" />
-        <img className="w-[420px] h-[400px]" src={man5} alt="" />
-        <img className="w-[420px] h-[400px]" src={man6} alt="" />
+        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man2} alt="" />
+        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man3} alt="" />
+        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man4} alt="" />
+        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man5} alt="" />
+        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man6} alt="" />
       </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* Background design */}
