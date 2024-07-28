@@ -173,6 +173,32 @@ function App() {
         <img src={img5} alt="" />
         <img src={img6} alt="" />
       </section>
+{/* monjur boss */}
+
+      <section className="w-full  container mx-auto">
+        <div className="grid grid-cols-12 h-[300px] ">
+          <span className="h-full  col-span-3 w-full">
+            <img className="w-full h-full object-cover" src={img1} alt="" />
+          </span>
+          <span className="h-full  col-span-6">
+          <img className="w-full h-full object-cover" src={img2} alt="" />
+          </span>
+          <span className="h-full  col-span-3">
+          <img className="w-full h-full object-cover" src={img3} alt="" />
+          </span>
+        </div>
+        <div className="grid grid-cols-12 h-[300px] ">
+            <span className="h-full  col-span-5 w-full">    
+            <img className="w-full h-full object-cover" src={img4} alt="" />
+            </span>
+            <span className="h-full  col-span-3">
+            <img className="w-full h-full object-cover" src={img5} alt="" />
+            </span>
+            <span className="h-full  col-span-4">
+            <img className="w-full h-full object-cover" src={img6} alt="" />
+            </span>
+        </div>
+      </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* bmi cALCULATOR */}
       <section className="run px-20 py-10 flex justify-between items-center container mx-auto mt-20 rounded-3xl mb-20">
@@ -330,9 +356,10 @@ function App() {
             <button className="text-blue-400 mt-4 underline">Read More</button>
           </div>
         </div>
-        <div className="explore">
+        {/* -- */}
+        <div className="explore overflow-hidden">
           <img
-            className="  transform transition-transform duration-800 hover:scale-105
+            className="transform transition-transform duration-1000 hover:scale-125
           h-[280px] hover:scale-30 w-[450px]"
             src={one}
             alt=""
@@ -357,7 +384,7 @@ function App() {
           />
         </div>
         <div>
-          <img className="h-[280px] w-[450px]" src={three} alt="" />
+          <img className="opacity-25 hover:opacity-100 transition-opacity duration-1000 h-[280px] w-[450px]" src={three} alt="" />
         </div>
         <div className="bg-red-900">
           <div className="mt-20">
@@ -377,7 +404,7 @@ function App() {
             alt=""
           />
         </div>
-        <div className="bg-red-900">
+        <div className="bg-red-900 hover:bg-orange-500 transition-colors duration-1000">
           <div className="mt-20">
             <h1 className="text-white text-3xl font-bold">
               Fitness for Seniors
