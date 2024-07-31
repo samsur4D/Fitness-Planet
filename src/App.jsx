@@ -4,6 +4,9 @@ import pic2 from "../src/assets/image 2.png";
 import pic3 from "../src/assets/image 4.png";
 import pic4 from "../src/assets/image 5.png";
 import "./App.css";
+import limit from "../src/assets/Break your limit.png";
+import brown from "../src/assets/Brown Modern Fun Run Promotion Instagram Post.png";
+import marathon from "../src/assets/Black And White Modern Global Running Day Celebration And Encouragement  For An Active Lifestyle Instagram Post.png";
 import banner from "../src/assets/Black and Red Gyms Back to Business Landscape Banner (1).png";
 import run from "../src/assets/Rectangle 22.png";
 import img1 from "../src/assets/exercise1.jpg";
@@ -25,11 +28,23 @@ import one from "../src/assets/posture.webp";
 import two from "../src/assets/obese.webp";
 import three from "../src/assets/slim.webp";
 import four from "../src/assets/medium-shot-man-working-gym-1-scaled.webp";
-import red from '../src/assets/Black and Red Gyms Back to Business Portrait Banner.png'
+import red from "../src/assets/Black and Red Gyms Back to Business Portrait Banner.png";
+import bradly from "../src/assets/bradley-dunn-fjpl1yrNvNQ-unsplash.jpg";
+
+import trainer1 from "../src/assets/smartfit-onelani-profile-new.jpg";
+import trainer2 from "../src/assets/1702402108099.jfif";
+import trainer3 from "../src/assets/yukgmll7jcsdiu0sufij.jpg";
+import trainer4 from "../src/assets/gym-workout-personal-trainer-with-checklist-clipboard-consulting-training-sports-gym-black-man-muscular-active-smiling-fitness-coach-writing-health-wellness-exercise_590464-96995.avif";
+import trainer5 from "../src/assets/Different-Types-of-Personal-Fitness-Trainers-And-Their-Average-Costs_--1024x538.webp";
+// import trainer1 from '../src/assets'
+// import trainer1 from '../src/assets'
+// import trainer1 from '../src/assets'
+// import trainer1 from '../src/assets'
 
 function App() {
   const [count, setCount] = useState(0);
-  
+  const [open, setOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
     <section className="overflow-hidden">
@@ -42,98 +57,120 @@ function App() {
           </h1>
         </div>
 
-        <div className="flex gap-10 font-bold border px-12 py-2 rounded-full">
+        <div className="hidden lg:flex gap-10 font-bold border px-12 py-2 rounded-full">
           <h2 className="text-white">Home</h2>
           <h2 className="text-white">Service</h2>
           <h2 className="text-white">Contact</h2>
           <h2 className="text-white">About</h2>
         </div>
+
+        <div className="lg:hidden flex items-center">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setDrawerOpen(true)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {drawerOpen && (
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+            <div className="fixed navbero top-0 right-0 w-64 bg-white h-full shadow-md z-50">
+              <div className="flex justify-end p-4">
+                <button
+                  className="text-black focus:outline-none"
+                  onClick={() => setDrawerOpen(false)}
+                >
+                  <svg
+                    className="w-6 text-white h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div className="flex flex-col items-center gap-4 py-6">
+                <h2 className="text-white font-bold font-samu text-4xl">
+                  Home
+                </h2>
+                <h2 className="text-white font-bold font-samu text-4xl">
+                  Service
+                </h2>
+                <h2 className="text-white font-bold font-samu text-4xl">
+                  Contact
+                </h2>
+                <h2 className="text-white font-bold font-samu text-4xl">
+                  About
+                </h2>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* banner */}
-      <div className="container mx-auto">
-        <img className="w-full" src={banner} alt="" />
-      </div>
-      <img
-        className="container mx-auto"
-        src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
-        alt=""
-      />
-      {/* two button */}
-      <div className="flex items-center text-center justify-center mt-5 gap-32">
-      <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-<span className="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
-<span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-<span className="relative px-5 text-white">Join Us</span>
-</span>
-</a>
-      <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-<span className="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
-<span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-<span className="relative text-white">our Package</span>
-</span>
-</a>
-      </div>
-      {/* two button */}
-      <section className="pack container mx-auto ">
-         <div className=" px-32 flex items-center justify-center py-32 ">
-         <img className="h-[900px]" src={og} alt="" />
-         <img className="h-[900px]" src={red} alt="" />
-         <img className="h-[900px]" src={green} alt="" />
-         </div>
-      </section>
-      {/* -------------------------------------------------------------------------------------- */}
-      {/* Change Your Habits */}
-      <div className="text-white mt-12 container mx-auto text-center">
-        <h1 className=" text-5xl font-bold mb-4">Change Your Habits</h1>
-        <p>
-          We believe fitness should be accessible to everyone, everywhere,
-          regardless of income or access to a gym.
-        </p>
+      <div className="mb-60">
+        <img className=" relative w-full" src={banner} alt="" />
+        <img
+          className="absolute -bottom-96 "
+          src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
+          alt=""
+        />
       </div>
 
-      <div className="flex items-center gap-5 justify-evenly mt-12 container mx-auto">
-        {/* pic-1 */}
-        <div className=" ">
-          <img className=" ml-24 rounded-full" src={pic1} alt="" />
-          <h1 className="font-samu text-red-600 ml-32 font-bold text-xl mb-2">
-            Movement
+      {/* -------------------------------------------------------------------------------------- */}
+      {/* Change Your Habits */}
+      <section className="exploreooo bg-fixed p">
+        <div className="text-white mt-12 container mx-auto text-center">
+          <h1 className=" text-9xl font-samu font-bold mb-4">
+            Our Fitness Package
           </h1>
-          <p className="text-white text-center">
-            We believe fitness should be accessible to everyone
+          <p className="text-2xl">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
           </p>
         </div>
-        <div className=" ">
-          <img className="ml-24 rounded-full" src={pic2} alt="" />
-          <h1 className="text-red-600 font-samu ml-40 font-bold text-xl mb-2 tracking-in-expand">
-            Time
-          </h1>
-          <p className="text-white">
-            We believe fitness should be accessible to everyone
-          </p>
-        </div>
-        <div className=" ">
-          <img className="ml-24 rounded-full" src={pic3} alt="" />
-          <h1 className="text-red-600 font-samu ml-32 font-bold text-xl mb-2">
-            Practice
-          </h1>
-          <p className="text-white text-center">
-            We believe fitness should be accessible to everyone
-          </p>
-        </div>
-        <div className=" ">
-          <img className="ml-24 rounded-full" src={pic4} alt="" />
-          <h1 className="text-red-600 font-samu ml-32 font-bold text-xl mb-2">
-            Weight Loss
-          </h1>
-          <p className="text-white text-center">
-            We believe fitness should be accessible to everyone
-          </p>
-        </div>
-      </div>
+
+        <section className=" container mx-auto ">
+          <div className="  gap-5 flex items-center justify-center  px-6 py-32 ">
+            <img data-aos="fade-right" className="h-[900px]" src={og} alt="" />
+            <img data-aos="zoom-in" className="h-[900px]" src={red} alt="" />
+            <img
+              data-aos="fade-left"
+              className="h-[900px]"
+              src={green}
+              alt=""
+            />
+          </div>
+        </section>
+      </section>
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* Run an Extra Mile Easily */}
-      <section className="run px-20 mt-20 py-12 flex items-center justify-between container mx-auto rounded-xl">
+
+      <section className="run mt-96 exploreoooi bg-fixed px-20 mb-60 py-12 flex items-center justify-between container mx-auto rounded-xl">
         <div className="justify-start flex-1 mr-96">
           <h1 className="text-7xl mb-5 font-bold text-white">
             Run an Extra Mile Easily
@@ -147,33 +184,59 @@ function App() {
             Join Now
           </button>
         </div>
-        <div>
-          <img className="w-[400px]" src={run} alt="" />
+        <div className="flex items-center mt-32 justify-center gap-12">
+          <img
+            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            src={limit}
+            alt=""
+          />
+          <img
+            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            src={marathon}
+            alt=""
+          />
+          <img
+            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            src={brown}
+            alt=""
+          />
+        </div>
+        {/* <div className="w-[600px] h-[400px]">
+    <video className="w-full h-full object-cover" controls>
+      <source src="../public/Black and White Modern Fitness YouTube Intro Video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div> */}
+      </section>
+
+      <section className="container  flex justify-center items-center mb-60 mt-60 mx-auto">
+        <div className="w-[1100px]  h-[600px]">
+          <video
+            className="w-full h-full object-cover"
+            controls
+            loop
+            autoplay
+            muted
+          >
+            <source
+              src="../public/Black and White Modern Fitness YouTube Intro Video.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="concern relative w-full h-[600px]">
+          <span className="bg-black opacity-50 w-full h-full text-center py-40 ">
+            <h1 className="text-white text-9xl font-bold ">Your Health</h1>
+            <h1 className="text-white text-9xl font-bold ">Our Concern</h1>
+          </span>
         </div>
       </section>
 
       {/* -------------------------------------------------------------------------------------- */}
       {/* Trainings and Exercises */}
-      <div className="container mx-auto mt-20">
-        <h1 className="text-white text-6xl font-bold mb-3">
-          Trainings and Exercises
-        </h1>
-        <p className="text-white">
-          We believe fitness should be accessible to everyone, everywhere,
-          regardless of income or access to a gym.
-        </p>
-      </div>
 
-      {/* picture 2 line  */}
-      <section className="grid grid-cols-3 container mx-auto mt-10 mb-12">
-        <img className="" src={img1} alt="" />
-        <img className="h-[350px] " src={img2} alt="" />
-        <img className="h-[350px] " src={img3} alt="" />
-        <img className="h-[340px]" src={img4} alt="" />
-        <img src={img5} alt="" />
-        <img src={img6} alt="" />
-      </section>
-{/* monjur boss */}
+      {/* monjur boss */}
 
       <section className="w-full  container mx-auto">
         <div className="grid grid-cols-12 h-[300px] ">
@@ -181,27 +244,27 @@ function App() {
             <img className="w-full h-full object-cover" src={img1} alt="" />
           </span>
           <span className="h-full  col-span-6">
-          <img className="w-full h-full object-cover" src={img2} alt="" />
+            <img className="w-full h-full object-cover" src={img2} alt="" />
           </span>
           <span className="h-full  col-span-3">
-          <img className="w-full h-full object-cover" src={img3} alt="" />
+            <img className="w-full h-full object-cover" src={img3} alt="" />
           </span>
         </div>
         <div className="grid grid-cols-12 h-[300px] ">
-            <span className="h-full  col-span-5 w-full">    
+          <span className="h-full  col-span-5 w-full">
             <img className="w-full h-full object-cover" src={img4} alt="" />
-            </span>
-            <span className="h-full  col-span-3">
+          </span>
+          <span className="h-full  col-span-3">
             <img className="w-full h-full object-cover" src={img5} alt="" />
-            </span>
-            <span className="h-full  col-span-4">
+          </span>
+          <span className="h-full  col-span-4">
             <img className="w-full h-full object-cover" src={img6} alt="" />
-            </span>
+          </span>
         </div>
       </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* bmi cALCULATOR */}
-      <section className="run px-20 py-10 flex justify-between items-center container mx-auto mt-20 rounded-3xl mb-20">
+      <section className="run mt-60 px-20 py-10 flex justify-between items-center container mx-auto mt-20 rounded-3xl mb-20">
         <div>
           <h1 className="text-white text-3xl font-bold mb-5">
             BMI Calculator Chart
@@ -292,7 +355,7 @@ function App() {
       </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* Meet Our Team */}
-      <div className="text-white text-center">
+      <div className="text-white mt-60 text-center">
         <h1 className="text-6xl font-bold mb-3">Meet Our Team</h1>
         <p>
           We believe fitness should be accessible to everyone, everywhere,
@@ -300,18 +363,80 @@ function App() {
         </p>
       </div>
 
-      <section className="grid grid-cols-3 container mx-auto gap-10 mt-12 bg-gray-800 px-10 py-10 rounded-2xl">
-        <img
-          className="hover:scale-[1.10] w-[420px] h-[400px] jello-diagonal-2 "
-          src={man1}
-          alt=""
-        />
-        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man2} alt="" />
-        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man3} alt="" />
-        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man4} alt="" />
-        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man5} alt="" />
-        <img className="jello-diagonal-2 rounded-lg w-[420px] h-[400px]" src={man6} alt="" />
+      {/* Coach  */}
+      <section className="grid grid-cols-3 container mx-auto gap-10 mt-12 team px-10 py-10 rounded-2xl">
+        <div className="coach1 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach1inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Nacho Beristáin</h1>
+              <p className="text-white text-xl mt-3">
+                Renowned for his ability to develop power punchers and durable
+                fighters.
+              </p>
+            </span>
+          </div>
+        </div>
+
+        {/* 2 */}
+        <div className="coach2 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach2inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Thomas Shelby</h1>
+              <p className="text-white text-xl mt-3">
+                Experience: Over 40 years in boxing as a trainer and former
+                professional boxer.
+              </p>
+            </span>
+          </div>
+        </div>
+        {/* 3 */}
+        <div className="coach3 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach3inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Virgil Hunter</h1>
+              <p className="text-white text-xl mt-3">
+                Experience: Over 40 years in boxing as a trainer and former
+                professional boxer.
+              </p>
+            </span>
+          </div>
+        </div>
+        {/* 4 */}
+        <div className="coach4 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach4inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Teddy Atlas</h1>
+              <p className="text-white text-xl mt-3">
+                Experience: Over 30 years as a boxing trainer and commentator.
+              </p>
+            </span>
+          </div>
+        </div>
+        {/* 5 */}
+        <div className="coach5 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach5inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Emanuel Steward</h1>
+              <p className="text-white text-xl mt-3">
+                Experience: Over 40 years in boxing as a trainer and manager
+                (deceased).
+              </p>
+            </span>
+          </div>
+        </div>
+        {/* 6 */}
+        <div className="coach6 rounded-2xl   h-[720px] bg-red-600">
+          <div className="coach6inner relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 top-80">
+              <h1 className="text-white text-5xl font-bold">Abel Sanchez</h1>
+              <p className="text-white text-xl mt-3">
+                Experience: Over 30 years in boxing as a trainer.
+              </p>
+            </span>
+          </div>
+        </div>
       </section>
+      {/* Coach  */}
       {/* -------------------------------------------------------------------------------------- */}
       {/* Background design */}
       {/* <img src="https://i.ibb.co/xG92BJS/top.png" alt="" /> */}
@@ -321,7 +446,6 @@ function App() {
             <img className="w-[400px]" src={og} alt="" />
             <img className="w-[400px]" src={green} alt="" />
             {/* <img className="w-[400px]" src={red} alt="" /> */}
-            
           </div>
 
           <div>
@@ -339,16 +463,16 @@ function App() {
         </div>
       </section>
       <img
-        className="container mx-auto"
+        className=""
         src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
         alt=""
       />
 
       {/* ------------------------------------------------------------------------------------------ */}
 
-      <section className="grid grid-cols-4 container  mx-auto">
-        <div className="bg-red-900">
-          <div className="mt-20">
+      <section className="grid grid-cols-4 ">
+        <div className="bg-red-900 hover:bg-gray-800  transition-colors duration-1000">
+          <div className="mt-20 ">
             <h1 className="text-white text-3xl font-bold">Postural Fitness</h1>
             <p className="text-white mt-2">
               Complete recovery program for desk-job related injuries.
@@ -359,13 +483,13 @@ function App() {
         {/* -- */}
         <div className="explore overflow-hidden">
           <img
-            className="transform transition-transform duration-1000 hover:scale-125
-          h-[280px] hover:scale-30 w-[450px]"
+            className="hover:scale-125 duration-1000
+          h-[280px]  w-[450px]"
             src={one}
             alt=""
           />
         </div>
-        <div className="bg-red-900">
+        <div className="bg-red-900 hover:bg-gray-800 duration-1000 transition-colors">
           <div className="mt-20">
             <h1 className="text-white text-3xl font-bold">
               Obesity Management
@@ -376,17 +500,21 @@ function App() {
             <button className="text-blue-400 mt-4 underline">Read More</button>
           </div>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <img
-            className="hover:animate-pulse h-[280px] w-[450px]"
+            className="hover:scale-125 duration-1000 h-[280px] w-[450px]"
             src={two}
             alt=""
           />
         </div>
         <div>
-          <img className="opacity-25 hover:opacity-100 transition-opacity duration-1000 h-[280px] w-[450px]" src={three} alt="" />
+          <img
+            className="opacity-25 hover:opacity-100 transition-opacity duration-1000 h-[280px] w-[450px]"
+            src={three}
+            alt=""
+          />
         </div>
-        <div className="bg-red-900">
+        <div className="bg-red-900 hover:bg-gray-800 duration-1000 transition-colors">
           <div className="mt-20">
             <h1 className="text-white text-3xl font-bold">
               Slimming and Shaping
@@ -397,15 +525,15 @@ function App() {
             <button className="text-blue-400 mt-4 underline">Read More</button>
           </div>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <img
-            className="hover:animate-pulse h-[280px] w-[450px]"
+            className="hover:scale-125 duration-1000 h-[280px] w-[450px]"
             src={four}
             alt=""
           />
         </div>
-        <div className="bg-red-900 hover:bg-orange-500 transition-colors duration-1000">
-          <div className="mt-20">
+        <div className="bg-red-900 hover:bg-gray-800  transition-colors duration-1000">
+          <div className="mt-20 ">
             <h1 className="text-white text-3xl font-bold">
               Fitness for Seniors
             </h1>
@@ -416,12 +544,12 @@ function App() {
           </div>
         </div>
       </section>
-      <img className=" container mx-auto" src="https://i.ibb.co/xG92BJS/top.png" alt="" />
+      <img className=" " src="https://i.ibb.co/xG92BJS/top.png" alt="" />
 
       {/* ------------------------------------------------------------------------------------------ */}
 
       {/* -------------------------------------------------------------------------------------- */}
-      <footer className="mt-32 container mx-auto">
+      <footer className="mt-32 ">
         <img src={footer} alt="" />
       </footer>
     </section>

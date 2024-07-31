@@ -3,6 +3,7 @@
 }
 
 
+
 .run{
 background: rgb(44,45,47);
 background: linear-gradient(171deg, rgba(44,45,47,1) 48%, rgba(72,95,120,1) 100%);
@@ -27,7 +28,7 @@ background: linear-gradient(171deg, rgba(44,45,47,1) 48%, rgba(72,95,120,1) 100%
 }
 
 
-/* .explore{
+.explore{
   background-image: url('https://i.ibb.co/P5Cr8Tj/posture.webp');
   background-position: center;
   background-size: cover;
@@ -37,41 +38,163 @@ background: linear-gradient(171deg, rgba(44,45,47,1) 48%, rgba(72,95,120,1) 100%
   justify-content: center;
   flex-direction: column;
   object-fit: cover;
-} */
-
-
-.jello-diagonal-2 {
-	animation: jello-diagonal-2 0.8s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+.exploreooo{
+  /* background-image: url('https://i.ibb.co/T2h0SFz/scott-webb-xw-Ml-VSq-P20-U-unsplash.jpg'); */
+  background-image: url('https://i.ibb.co/kcPnQkp/daniel-apodaca-Wdo-Qio6-HPVA-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  
+}
+.exploreoooi{
+  background-image: url('https://i.ibb.co/Dw3V99x/anastase-maragos-9dz-WZQWZMd-E-unsplash.jpg');
+  /* background-image: url('https://i.ibb.co/kcPnQkp/daniel-apodaca-Wdo-Qio6-HPVA-unsplash.jpg'); */
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  
+}
+.navbero{
+  background-image: url('https://i.ibb.co/Y0qkqyj/edgar-chaparro-s-Hfo3-WOg-GTU-unsplash.jpg');
+  /* background-image: url('https://i.ibb.co/kcPnQkp/daniel-apodaca-Wdo-Qio6-HPVA-unsplash.jpg'); */
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  
+}
+.concern{
+  background-image: url('https://i.ibb.co/j5VpCyJ/artem-beliaikin-n-KCtka-W4-JU4-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
 }
 
-@keyframes jello-diagonal-2 {
-  0% {
-    transform: skew(0deg, 0deg);
-  }
-  30% {
-    transform: skew(-25deg, -25deg);
-  }
-  40% {
-    transform: skew(15deg, 15deg);
-  }
-  50% {
-    transform: skew(-15deg, -15deg);
-  }
-  65% {
-    transform: skew(5deg, 5deg);
-  }
-  75% {
-    transform: skew(-5deg, -5deg);
-  }
-  100% {
-    transform: skew(0deg, 0deg);
-  }
+
+.pompom{
+  background: rgb(50,16,16);
+background: linear-gradient(101deg, rgba(50,16,16,1) 44%, rgba(177,117,95,1) 100%);
 }
 
-.animated {
+
+
+.team{
+  background: rgb(0,0,0);
+background: linear-gradient(193deg, rgba(0,0,0,1) 1%, rgba(0,0,0,1) 16%, rgba(36,52,70,1) 81%);
+}
+
+.coach1{
+  background-image: url(https://i.ibb.co/55cW31s/1702402108099.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coach2{
+  background-image: url(https://i.ibb.co/99MDSbs/smartfit-onelani-profile-new.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coach3{
+  background-image: url(https://i.ibb.co/dmymSxW/gym-workout-personal-trainer-with-checklist-clipboard-consulting-training-sports-gym-black-man-muscu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coach4{
+  background-image: url(https://i.ibb.co/9VRWYsq/trainer1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coach5{
+  background-image: url(https://i.ibb.co/1Z3ygG8/trainer2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coach6{
+  background-image: url(https://i.ibb.co/vkwjsSG/trainer6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coach1inner{
+  visibility: hidden;
+}
+
+.coach1:hover .coach1inner {
   visibility: visible;
-  opacity: 1;
 }
+/* ------------------- */
+.coach2inner{
+  visibility: hidden;
+}
+
+.coach2:hover .coach2inner {
+  visibility: visible;
+}
+/* ------------------------- */
+.coach3inner{
+  visibility: hidden;
+}
+
+.coach3:hover .coach3inner {
+  visibility: visible;
+}
+/* ------------------------ */
+.coach4inner{
+  visibility: hidden;
+}
+
+.coach4:hover .coach4inner {
+  visibility: visible;
+}
+/* ------------- */
+.coach5inner{
+  visibility: hidden;
+}
+
+.coach5:hover .coach5inner {
+  visibility: visible;
+}
+/* ------------- */
+.coach6inner{
+  visibility: hidden;
+}
+
+.coach6:hover .coach6inner {
+  visibility: visible;
+}
+/* ------------- */
+
+.coachbg{
+  background: rgb(50,16,16);
+background: linear-gradient(90deg, rgba(50,16,16,1) 0%, rgba(198,141,120,1) 100%);
+}
+
+
 
 
 
