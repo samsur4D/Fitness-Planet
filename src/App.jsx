@@ -29,21 +29,17 @@ import two from "../src/assets/obese.webp";
 import three from "../src/assets/slim.webp";
 import four from "../src/assets/medium-shot-man-working-gym-1-scaled.webp";
 import red from "../src/assets/Black and Red Gyms Back to Business Portrait Banner.png";
-import bradly from "../src/assets/bradley-dunn-fjpl1yrNvNQ-unsplash.jpg";
+// import bradly from "../src/assets/bradley-dunn-fjpl1yrNvNQ-unsplash.jpg";
 
-import trainer1 from "../src/assets/smartfit-onelani-profile-new.jpg";
-import trainer2 from "../src/assets/1702402108099.jfif";
-import trainer3 from "../src/assets/yukgmll7jcsdiu0sufij.jpg";
-import trainer4 from "../src/assets/gym-workout-personal-trainer-with-checklist-clipboard-consulting-training-sports-gym-black-man-muscular-active-smiling-fitness-coach-writing-health-wellness-exercise_590464-96995.avif";
-import trainer5 from "../src/assets/Different-Types-of-Personal-Fitness-Trainers-And-Their-Average-Costs_--1024x538.webp";
-// import trainer1 from '../src/assets'
-// import trainer1 from '../src/assets'
-// import trainer1 from '../src/assets'
-// import trainer1 from '../src/assets'
+// import trainer1 from "../src/assets/smartfit-onelani-profile-new.jpg";
+// import trainer2 from "../src/assets/1702402108099.jfif";
+// import trainer3 from "../src/assets/yukgmll7jcsdiu0sufij.jpg";
+// import trainer4 from "../src/assets/gym-workout-personal-trainer-with-checklist-clipboard-consulting-training-sports-gym-black-man-muscular-active-smiling-fitness-coach-writing-health-wellness-exercise_590464-96995.avif";
+// import trainer5 from "../src/assets/Different-Types-of-Personal-Fitness-Trainers-And-Their-Average-Costs_--1024x538.webp";
+
 
 function App() {
   const [count, setCount] = useState(0);
-  const [open, setOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
@@ -131,10 +127,10 @@ function App() {
 
       {/* -------------------------------------------------------------------------------------- */}
       {/* banner */}
-      <div className="mb-60">
-        <img className=" relative w-full" src={banner} alt="" />
+      <div className="mb-1 lg:mb-12">
+        <img className=" relative md:relative lg:relative w-full" src={banner} alt="" />
         <img
-          className="absolute -bottom-96 "
+          className="absolute bottom-[360px] md:bottom-[450px] lg:-bottom-[420px] "
           src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
           alt=""
         />
@@ -142,12 +138,12 @@ function App() {
 
       {/* -------------------------------------------------------------------------------------- */}
       {/* Fitness Package */}
-      <section className="exploreooo bg-fixed p">
+      <section className="exploreooo py-20 bg-fixed p">
         <div className="text-white mt-12 container mx-auto text-center">
-          <h1 className=" md:text-7xl lg:text-9xl font-samu font-bold mb-4">
+          <h1 className="text-4xl md:text-7xl lg:text-9xl font-samu font-bold mb-4">
             Our Fitness Package
           </h1>
-          <p className="text-2xl">
+          <p className="text-lg md:text-2xl lg:text-2xl">
             We believe fitness should be accessible to everyone, everywhere,
             regardless of income or access to a gym.
           </p>
@@ -155,9 +151,9 @@ function App() {
 
         <section className=" container mx-auto ">
           <div className="  gap-5 flex items-center justify-center  px-6 py-32 ">
-            <img data-aos="fade-right" className=  "md:h-[500px] lg:h-[900px]" src={og} alt="" />
-            <img data-aos="zoom-in" className="     md:h-[500px] lg:h-[900px]   " src={red} alt="" />
-            <img data-aos="fade-left" className="   md:h-[500px] lg:h-[900px] " src={green} alt=""/>
+            <img data-aos="fade-right" className=  "h-[230px] md:h-[500px] lg:h-[900px]" src={og} alt="" />
+            <img data-aos="zoom-in" className="     h-[230px] md:h-[500px] lg:h-[900px]   " src={red} alt="" />
+            <img data-aos="fade-left" className="   h-[230px] md:h-[500px] lg:h-[900px] " src={green} alt=""/>
           </div>
         </section>
       </section>
@@ -166,8 +162,8 @@ function App() {
       {/* -------------------------------------------------------------------------------------- */}
       {/* Run an Extra Mile Easily */}
       <section className="run mt-96 exploreoooi bg-fixed px-20 mb-60 py-12 flex items-center justify-between container mx-auto rounded-xl">
-        <div className="justify-start flex-1 mr-96">
-          <h1 className="md:text-4xl lg:text-7xl mb-5 font-bold text-white">
+        <div className="justify-start flex-1 md:mr-96 lg:mr-96">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl mb-5 font-bold text-white">
             Run an Extra Mile Easily
           </h1>
           <p className="text-white mb-5">
@@ -179,7 +175,7 @@ function App() {
             Join Now
           </button>
         </div>
-        <div className="flex  lg:flex-row  items-center mt-32 justify-center gap-12">
+        <div className="flex flex-col md:flex-row  lg:flex-row  items-center mt-32 justify-center gap-12">
           <img
             className="hover:scale-125 duration-300 md:w-[230px] lg:w-[400px] rounded-3xl"
             src={limit}
@@ -206,8 +202,8 @@ function App() {
 
 
              {/* viedo  */}
-             <section className="container  flex justify-center items-center mb-60 mt-60 mx-auto">
-        <div className="w-[1100px]  h-[600px]">
+             <section className="container  flex flex-col md:flex-col lg:flex-row justify-center items-center mb-60 mt-60 mx-auto">
+        <div className="w-[400px] md:w-[1100px] lg:w-[1100px]   lg:h-[600px]">
           <video
             className="w-full h-full object-cover"
             controls
@@ -222,46 +218,61 @@ function App() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="concern relative w-full h-[600px]">
+        <div className="concern relative w-full h-[300px] md:h-[600px] lg:h-[600px]">
           <span className="bg-black opacity-50 w-full h-full text-center py-40 ">
-            <h1 className="text-white text-9xl font-bold ">Your Health</h1>
-            <h1 className="text-white text-9xl font-bold ">Our Concern</h1>
+            <h1 className="text-white text-4xl md:lg:text-9xl lg:text-9xl font-bold ">Your Health</h1>
+            <h1 className="text-white text-4xl md:lg:text-9xl lg:text-9xl font-bold ">Our Concern</h1>
           </span>
         </div>
       </section>
+
+
+
+
 
       {/* -------------------------------------------------------------------------------------- */}
       {/* Trainings and Exercises */}
 
       {/* monjur boss */}
+     
+      <section className="w-full container   mx-auto px-4 py-8">
+      <div className="justify-start container mx-auto flex-1 md:mr-96 lg:mr-96">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl mb-5 font-bold text-white">
+          Trainings and Exercises
+          </h1>
+          <p className="text-white mb-5">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
+        </div>
+  <div className="grid grid-cols-12 gap-2 h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px] mb-4">
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-3 w-full">
+      <img className="w-full h-full object-cover" src={img1} alt="Image 1" />
+    </span>
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-6">
+      <img className="w-full h-full object-cover" src={img2} alt="Image 2" />
+    </span>
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-3">
+      <img className="w-full h-full object-cover" src={img3} alt="Image 3" />
+    </span>
+  </div>
+  <div className="grid grid-cols-12 gap-2 h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-5 w-full">
+      <img className="w-full h-full object-cover" src={img4} alt="Image 4" />
+    </span>
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-3">
+      <img className="w-full h-full object-cover" src={img5} alt="Image 5" />
+    </span>
+    <span className="h-full col-span-12 sm:col-span-6 lg:col-span-4">
+      <img className="w-full h-full object-cover" src={img6} alt="Image 6" />
+    </span>
+  </div>
+</section>
 
-      <section className="w-full  container mx-auto">
-        <div className="grid grid-cols-12 h-[300px] ">
-          <span className="h-full  col-span-3 w-full">
-            <img className="w-full h-full object-cover" src={img1} alt="" />
-          </span>
-          <span className="h-full  col-span-6">
-            <img className="w-full h-full object-cover" src={img2} alt="" />
-          </span>
-          <span className="h-full  col-span-3">
-            <img className="w-full h-full object-cover" src={img3} alt="" />
-          </span>
-        </div>
-        <div className="grid grid-cols-12 h-[300px] ">
-          <span className="h-full  col-span-5 w-full">
-            <img className="w-full h-full object-cover" src={img4} alt="" />
-          </span>
-          <span className="h-full  col-span-3">
-            <img className="w-full h-full object-cover" src={img5} alt="" />
-          </span>
-          <span className="h-full  col-span-4">
-            <img className="w-full h-full object-cover" src={img6} alt="" />
-          </span>
-        </div>
-      </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* bmi cALCULATOR */}
-      <section className="container mx-auto mt-20 mb-20 px-4 py-10 lg:px-20 rounded-3xl bg-gray-800">
+      <section className="container mx-auto mt-[700px] lg:mt-[200px] lg mb-20 px-4 py-10 lg:px-20 rounded-3xl bg-gray-800">
   <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
     <div className="w-full lg:w-1/2">
       <h1 className="text-white text-2xl sm:text-3xl font-bold mb-5">
@@ -361,9 +372,9 @@ function App() {
       <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 container mx-auto gap-10 mt-12 team px-10 py-10 rounded-2xl">
         <div className="coach1 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach1inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Nacho Beristáin</h1>
-              <p className="text-white text-xl mt-3">
+            <span className="absolute px-2 top-1 md:top-20 lg:top-80">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Nacho Beristáin</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Renowned for his ability to develop power punchers and durable
                 fighters.
               </p>
@@ -375,8 +386,8 @@ function App() {
         <div className="coach2 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach2inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
             <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Thomas Shelby</h1>
-              <p className="text-white text-xl mt-3">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Thomas Shelby</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and former
                 professional boxer.
               </p>
@@ -387,8 +398,8 @@ function App() {
         <div className="coach3 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach3inner relative  md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
             <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Virgil Hunter</h1>
-              <p className="text-white text-xl mt-3">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Virgil Hunter</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and former
                 professional boxer.
               </p>
@@ -399,8 +410,8 @@ function App() {
         <div className="coach4 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach4inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
             <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Teddy Atlas</h1>
-              <p className="text-white text-xl mt-3">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Teddy Atlas</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Experience: Over 30 years as a boxing trainer and commentator.
               </p>
             </span>
@@ -410,8 +421,8 @@ function App() {
         <div className="coach5 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach5inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
             <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Emanuel Steward</h1>
-              <p className="text-white text-xl mt-3">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Emanuel Steward</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and manager
                 (deceased).
               </p>
@@ -422,8 +433,8 @@ function App() {
         <div className="coach6 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
           <div className="coach6inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
             <span className="absolute px-2 md:top-20 lg:top-80">
-              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Abel Sanchez</h1>
-              <p className="text-white text-xl mt-3">
+              <h1 className="text-white  text-xl md:text-3xl lg:text-5xl font-bold">Abel Sanchez</h1>
+              <p className="text-white text-sm md:text-xl lg:text-xl mt-3">
                 Experience: Over 30 years in boxing as a trainer.
               </p>
             </span>
@@ -438,12 +449,12 @@ function App() {
       {/* Background design */}
       <section className="services bg-fixed py-24 lg:py-48 px-4 lg:px-20 mt-24">
   <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
-    <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4 lg:gap-8">
-      <img className="w-full md:w-[250px] lg:w-[400px]" src={og} alt="Image 1" />
-      <img className="w-full md:w-[250px] lg:w-[400px]" src={green} alt="Image 2" />
+    <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4 lg:gap-0">
+      <img className="w-full w-[190px] md:w-[250px] lg:w-[350px]" src={og} alt="Image 1" />
+      <img className="w-full w-[190px] md:w-[250px] lg:w-[350px]" src={green} alt="Image 2" />
     </div>
 
-    <div className="mt-8 lg:mt-0">
+    <div className="mt-8 lg:mt-0 lg:ml-60">
       <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold mb-4">
         A Fresh Approach to Fitness
       </h1>
@@ -472,6 +483,7 @@ function App() {
       {/* ------------------------------------------------------------------------------------------ */}
 
       <section className="grid md:grid-cols-2 lg:grid-cols-4 ">
+
         <div className="bg-red-900 hover:bg-gray-800  transition-colors duration-1000">
           <div className="mt-20 ">
             <h1 className="text-white text-3xl font-bold">Postural Fitness</h1>
@@ -481,7 +493,6 @@ function App() {
             <button className="text-blue-400 mt-4 underline">Read More</button>
           </div>
         </div>
-        {/* -- */}
         <div className="explore overflow-hidden">
           <img
             className="hover:scale-125 duration-1000
@@ -490,7 +501,27 @@ function App() {
             alt=""
           />
         </div>
-        <div className="bg-red-900 hover:bg-gray-800 duration-1000 transition-colors">
+          {/* -------------------------- */}
+          <div className="lg:hidden">
+          <img
+            className="opacity-25  hover:opacity-100 transition-opacity duration-1000 h-[280px] w-[450px]"
+            src={three}
+            alt=""
+          />
+        </div>
+        <div className="bg-red-900 lg:hidden hover:bg-gray-800 duration-1000 transition-colors">
+          <div className="mt-20">
+            <h1 className="text-white text-3xl font-bold">
+              Slimming and Shaping
+            </h1>
+            <p className="text-white mt-2">
+              Sculpt your best self with our non-surgical program.
+            </p>
+            <button className="text-blue-400 mt-4 underline">Read More</button>
+          </div>
+        </div>
+          {/* -------------------------- */}
+        <div className="bg-red-900  hover:bg-gray-800 duration-1000 transition-colors">
           <div className="mt-20">
             <h1 className="text-white text-3xl font-bold">
               Obesity Management
@@ -508,14 +539,17 @@ function App() {
             alt=""
           />
         </div>
-        <div>
+        {/* -------------------------- */}
+
+        {/* -------------------------- */}
+        <div className="hidden md:hidden lg:block">
           <img
             className="opacity-25 hover:opacity-100 transition-opacity duration-1000 h-[280px] w-[450px]"
             src={three}
             alt=""
           />
         </div>
-        <div className="bg-red-900 hover:bg-gray-800 duration-1000 transition-colors">
+        <div className="bg-red-900 hidden md:hidden lg:block hover:bg-gray-800 duration-1000 transition-colors">
           <div className="mt-20">
             <h1 className="text-white text-3xl font-bold">
               Slimming and Shaping
@@ -526,6 +560,9 @@ function App() {
             <button className="text-blue-400 mt-4 underline">Read More</button>
           </div>
         </div>
+        {/* ------------------------ */}
+
+        {/* ------------------------ */}
         <div className="overflow-hidden">
           <img
             className="hover:scale-125 duration-1000 h-[280px] w-[450px]"
@@ -547,7 +584,6 @@ function App() {
       </section>
       <img className=" " src="https://i.ibb.co/xG92BJS/top.png" alt="" />
 
-      {/* ------------------------------------------------------------------------------------------ */}
 
       {/* -------------------------------------------------------------------------------------- */}
       <footer className="mt-32 ">

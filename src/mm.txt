@@ -1,22 +1,24 @@
-   <section className="services  bg-fixed py-48 px-60 mt-24">
-        <div className="flex items-center justify-between gap-72">
-          <div className="flex items-center">
-            <img className="md:w-[10px] lg:w-[400px]" src={og} alt="" />
-            <img className="md:w-[10px] lg:w-[400px]" src={green} alt="" />
-        
-          </div>
-
-          <div>
-            <h1 className="text-5xl text-white font-bold mb-4">
-              A Fresh Approach to Fitness
-            </h1>
-            <p className="text-white">
-              With 16+ years of experience in transformative fitness industry we
-              have distilled the common fitness concerns of urban lifestyle and
-              boiled them down to four fitness recovery programs. From weight
-              management to joint pain, for adolescent to senior citizens, our
-              bespoke solutions cater to individual convenience and aspirations.
-            </p>
-          </div>
+      <section className="w-full  container mx-auto">
+        <div className="grid grid-cols-12 h-[300px] ">
+          <span className="h-full  col-span-3 w-full">
+            <img className="w-full h-full object-cover" src={img1} alt="" />
+          </span>
+          <span className="h-full  col-span-6">
+            <img className="w-full h-full object-cover" src={img2} alt="" />
+          </span>
+          <span className="h-full  col-span-3">
+            <img className="w-full h-full object-cover" src={img3} alt="" />
+          </span>
+        </div>
+        <div className="grid grid-cols-12 h-[300px] ">
+          <span className="h-full  col-span-5 w-full">
+            <img className="w-full h-full object-cover" src={img4} alt="" />
+          </span>
+          <span className="h-full  col-span-3">
+            <img className="w-full h-full object-cover" src={img5} alt="" />
+          </span>
+          <span className="h-full  col-span-4">
+            <img className="w-full h-full object-cover" src={img6} alt="" />
+          </span>
         </div>
       </section>
