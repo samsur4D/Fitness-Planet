@@ -141,10 +141,10 @@ function App() {
       </div>
 
       {/* -------------------------------------------------------------------------------------- */}
-      {/* Change Your Habits */}
+      {/* Fitness Package */}
       <section className="exploreooo bg-fixed p">
         <div className="text-white mt-12 container mx-auto text-center">
-          <h1 className=" text-9xl font-samu font-bold mb-4">
+          <h1 className=" md:text-7xl lg:text-9xl font-samu font-bold mb-4">
             Our Fitness Package
           </h1>
           <p className="text-2xl">
@@ -155,24 +155,19 @@ function App() {
 
         <section className=" container mx-auto ">
           <div className="  gap-5 flex items-center justify-center  px-6 py-32 ">
-            <img data-aos="fade-right" className="h-[900px]" src={og} alt="" />
-            <img data-aos="zoom-in" className="h-[900px]" src={red} alt="" />
-            <img
-              data-aos="fade-left"
-              className="h-[900px]"
-              src={green}
-              alt=""
-            />
+            <img data-aos="fade-right" className=  "md:h-[500px] lg:h-[900px]" src={og} alt="" />
+            <img data-aos="zoom-in" className="     md:h-[500px] lg:h-[900px]   " src={red} alt="" />
+            <img data-aos="fade-left" className="   md:h-[500px] lg:h-[900px] " src={green} alt=""/>
           </div>
         </section>
       </section>
 
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* Run an Extra Mile Easily */}
-
       <section className="run mt-96 exploreoooi bg-fixed px-20 mb-60 py-12 flex items-center justify-between container mx-auto rounded-xl">
         <div className="justify-start flex-1 mr-96">
-          <h1 className="text-7xl mb-5 font-bold text-white">
+          <h1 className="md:text-4xl lg:text-7xl mb-5 font-bold text-white">
             Run an Extra Mile Easily
           </h1>
           <p className="text-white mb-5">
@@ -184,32 +179,34 @@ function App() {
             Join Now
           </button>
         </div>
-        <div className="flex items-center mt-32 justify-center gap-12">
+        <div className="flex  lg:flex-row  items-center mt-32 justify-center gap-12">
           <img
-            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            className="hover:scale-125 duration-300 md:w-[230px] lg:w-[400px] rounded-3xl"
             src={limit}
             alt=""
           />
           <img
-            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            className="hover:scale-125 duration-300 md:w-[230px] lg:w-[400px] rounded-3xl"
             src={marathon}
             alt=""
           />
           <img
-            className="hover:scale-125 duration-300 w-[400px] rounded-3xl"
+            className="hover:scale-125 duration-300 md:w-[230px] lg:w-[400px] rounded-3xl"
             src={brown}
             alt=""
           />
         </div>
-        {/* <div className="w-[600px] h-[400px]">
-    <video className="w-full h-full object-cover" controls>
-      <source src="../public/Black and White Modern Fitness YouTube Intro Video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div> */}
       </section>
 
-      <section className="container  flex justify-center items-center mb-60 mt-60 mx-auto">
+
+
+
+
+
+
+
+             {/* viedo  */}
+             <section className="container  flex justify-center items-center mb-60 mt-60 mx-auto">
         <div className="w-[1100px]  h-[600px]">
           <video
             className="w-full h-full object-cover"
@@ -264,95 +261,93 @@ function App() {
       </section>
       {/* -------------------------------------------------------------------------------------- */}
       {/* bmi cALCULATOR */}
-      <section className="run mt-60 px-20 py-10 flex justify-between items-center container mx-auto mt-20 rounded-3xl mb-20">
-        <div>
-          <h1 className="text-white text-3xl font-bold mb-5">
-            BMI Calculator Chart
-          </h1>
-          {/*  */}
-          <div className="overflow-x-auto ">
-            <table className="table">
-              {/* head */}
-              <thead className="border">
-                <tr>
-                  <th className="border text-white">BMI</th>
-                  <th className="border text-white">Weight Status</th>
-                </tr>
-              </thead>
-              <tbody className="text-white">
-                {/* row 1 */}
-                <tr>
-                  <td className="border">Below 18.5</td>
-                  <td className="border">Underweight</td>
-                </tr>
-                {/* row 2 */}
-                <tr>
-                  <td className="border">18.5 - 24.9</td>
-                  <td className="border">Healthy</td>
-                </tr>
-                {/* row 3 */}
-                <tr>
-                  <td className="border">25.0 - 29.9</td>
-                  <td className="border">Overweight</td>
-                </tr>
-                {/* row 4 */}
-                <tr>
-                  <td className="border">30.0 - and Above</td>
-                  <td className="border">Obese</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          {/*  */}
-        </div>
+      <section className="container mx-auto mt-20 mb-20 px-4 py-10 lg:px-20 rounded-3xl bg-gray-800">
+  <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
+    <div className="w-full lg:w-1/2">
+      <h1 className="text-white text-2xl sm:text-3xl font-bold mb-5">
+        BMI Calculator Chart
+      </h1>
+      <div className="overflow-x-auto">
+        <table className="table-auto w-full border-collapse">
+          <thead className="border">
+            <tr>
+              <th className="border text-white px-4 py-2">BMI</th>
+              <th className="border text-white px-4 py-2">Weight Status</th>
+            </tr>
+          </thead>
+          <tbody className="text-white">
+            <tr>
+              <td className="border px-4 py-2">Below 18.5</td>
+              <td className="border px-4 py-2">Underweight</td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">18.5 - 24.9</td>
+              <td className="border px-4 py-2">Healthy</td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">25.0 - 29.9</td>
+              <td className="border px-4 py-2">Overweight</td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">30.0 - and Above</td>
+              <td className="border px-4 py-2">Obese</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-        <div>
-          <div>
-            <h1 className="text-white text-3xl font-bold mb-1">
-              Calculate your BMI
-            </h1>
-            <p className="text-white">
-              We believe fitness should be accessible to everyone, everywhere,
-              regardless of income or access to a gym.{" "}
-            </p>
-          </div>
+    <div className="w-full lg:w-1/2">
+      <div className="mb-5">
+        <h1 className="text-white text-2xl sm:text-3xl font-bold mb-2">
+          Calculate your BMI
+        </h1>
+        <p className="text-white">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+      </div>
 
-          <div>
-            <div className="flex gap-5">
-              <input
-                type="text"
-                placeholder="Height/Cm"
-                className="input input-bordered w-full max-w-xs"
-              />
-              <input
-                type="text"
-                placeholder="Weight/Kg"
-                className="input input-bordered w-full max-w-xs"
-              />
-            </div>
-            <div className="flex gap-5 mt-3">
-              <input
-                type="text"
-                placeholder="Age"
-                className="input input-bordered w-full max-w-xs"
-              />
-              <input
-                type="text"
-                placeholder="Sex"
-                className="input input-bordered w-full max-w-xs"
-              />
-            </div>
-            <input
-              type="text"
-              placeholder="Select an activity factor"
-              className="input input-bordered w-full max-w-[660px] mt-3"
-            />
-          </div>
-          <button className="bg-red-600 px-10 py-2 rounded-2xl text-white font-bold mt-3">
-            Calculate
-          </button>
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
+          <input
+            type="text"
+            placeholder="Height/Cm"
+            className="input input-bordered w-full"
+          />
+          <input
+            type="text"
+            placeholder="Weight/Kg"
+            className="input input-bordered w-full"
+          />
         </div>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <input
+            type="text"
+            placeholder="Age"
+            className="input input-bordered w-full"
+          />
+          <input
+            type="text"
+            placeholder="Sex"
+            className="input input-bordered w-full"
+          />
+        </div>
+        <input
+          type="text"
+          placeholder="Select an activity factor"
+          className="input input-bordered w-full"
+        />
+      </div>
+
+      <button className="bg-red-600 px-10 py-2 rounded-2xl text-white font-bold mt-4 w-full sm:w-auto">
+        Calculate
+      </button>
+    </div>
+  </div>
       </section>
+
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* Meet Our Team */}
       <div className="text-white mt-60 text-center">
@@ -362,13 +357,12 @@ function App() {
           regardless of income or access to a gym.
         </p>
       </div>
-
-      {/* Coach  */}
-      <section className="grid grid-cols-3 container mx-auto gap-10 mt-12 team px-10 py-10 rounded-2xl">
-        <div className="coach1 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach1inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Nacho Beristáin</h1>
+{/* ____________________________________________________________________________________________________________ */}
+      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 container mx-auto gap-10 mt-12 team px-10 py-10 rounded-2xl">
+        <div className="coach1 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach1inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Nacho Beristáin</h1>
               <p className="text-white text-xl mt-3">
                 Renowned for his ability to develop power punchers and durable
                 fighters.
@@ -378,10 +372,10 @@ function App() {
         </div>
 
         {/* 2 */}
-        <div className="coach2 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach2inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Thomas Shelby</h1>
+        <div className="coach2 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach2inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Thomas Shelby</h1>
               <p className="text-white text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and former
                 professional boxer.
@@ -390,10 +384,10 @@ function App() {
           </div>
         </div>
         {/* 3 */}
-        <div className="coach3 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach3inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Virgil Hunter</h1>
+        <div className="coach3 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach3inner relative  md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Virgil Hunter</h1>
               <p className="text-white text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and former
                 professional boxer.
@@ -402,10 +396,10 @@ function App() {
           </div>
         </div>
         {/* 4 */}
-        <div className="coach4 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach4inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Teddy Atlas</h1>
+        <div className="coach4 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach4inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Teddy Atlas</h1>
               <p className="text-white text-xl mt-3">
                 Experience: Over 30 years as a boxing trainer and commentator.
               </p>
@@ -413,10 +407,10 @@ function App() {
           </div>
         </div>
         {/* 5 */}
-        <div className="coach5 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach5inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Emanuel Steward</h1>
+        <div className="coach5 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach5inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Emanuel Steward</h1>
               <p className="text-white text-xl mt-3">
                 Experience: Over 40 years in boxing as a trainer and manager
                 (deceased).
@@ -425,10 +419,10 @@ function App() {
           </div>
         </div>
         {/* 6 */}
-        <div className="coach6 rounded-2xl   h-[720px] bg-red-600">
-          <div className="coach6inner relative rounded-2xl h-full w-full coachbg opacity-80">
-            <span className="absolute px-2 top-80">
-              <h1 className="text-white text-5xl font-bold">Abel Sanchez</h1>
+        <div className="coach6 rounded-2xl h-[180px] md:h-[300px] lg:h-[720px] bg-red-600">
+          <div className="coach6inner relative md:relative lg:relative rounded-2xl h-full w-full coachbg opacity-80">
+            <span className="absolute px-2 md:top-20 lg:top-80">
+              <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-bold">Abel Sanchez</h1>
               <p className="text-white text-xl mt-3">
                 Experience: Over 30 years in boxing as a trainer.
               </p>
@@ -437,40 +431,47 @@ function App() {
         </div>
       </section>
       {/* Coach  */}
+
+
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* Background design */}
-      {/* <img src="https://i.ibb.co/xG92BJS/top.png" alt="" /> */}
-      <section className="services  bg-fixed py-48 px-60 mt-24">
-        <div className="flex items-center justify-between gap-72">
-          <div className="flex items-center">
-            <img className="w-[400px]" src={og} alt="" />
-            <img className="w-[400px]" src={green} alt="" />
-            {/* <img className="w-[400px]" src={red} alt="" /> */}
-          </div>
+      <section className="services bg-fixed py-24 lg:py-48 px-4 lg:px-20 mt-24">
+  <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+    <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4 lg:gap-8">
+      <img className="w-full md:w-[250px] lg:w-[400px]" src={og} alt="Image 1" />
+      <img className="w-full md:w-[250px] lg:w-[400px]" src={green} alt="Image 2" />
+    </div>
 
-          <div>
-            <h1 className="text-5xl text-white font-bold mb-4">
-              A Fresh Approach to Fitness
-            </h1>
-            <p className="text-white">
-              With 16+ years of experience in transformative fitness industry we
-              have distilled the common fitness concerns of urban lifestyle and
-              boiled them down to four fitness recovery programs. From weight
-              management to joint pain, for adolescent to senior citizens, our
-              bespoke solutions cater to individual convenience and aspirations.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="mt-8 lg:mt-0">
+      <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold mb-4">
+        A Fresh Approach to Fitness
+      </h1>
+      <p className="text-white text-sm sm:text-base lg:text-lg">
+        With 16+ years of experience in transformative fitness industry we have
+        distilled the common fitness concerns of urban lifestyle and boiled them
+        down to four fitness recovery programs. From weight management to joint
+        pain, for adolescent to senior citizens, our bespoke solutions cater to
+        individual convenience and aspirations.
+      </p>
+    </div>
+  </div>
+</section>
+
+
       <img
         className=""
         src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
         alt=""
       />
 
+
+
+
+
       {/* ------------------------------------------------------------------------------------------ */}
 
-      <section className="grid grid-cols-4 ">
+      <section className="grid md:grid-cols-2 lg:grid-cols-4 ">
         <div className="bg-red-900 hover:bg-gray-800  transition-colors duration-1000">
           <div className="mt-20 ">
             <h1 className="text-white text-3xl font-bold">Postural Fitness</h1>

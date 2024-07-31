@@ -1,70 +1,22 @@
-  <nav className="flex items-center justify-between mb-12 py-3 container mx-auto">
-        <div>
-          <h1 className="font-samu text-3xl font-bold text-red-700">
-            Fitness Planet
-          </h1>
+   <section className="services  bg-fixed py-48 px-60 mt-24">
+        <div className="flex items-center justify-between gap-72">
+          <div className="flex items-center">
+            <img className="md:w-[10px] lg:w-[400px]" src={og} alt="" />
+            <img className="md:w-[10px] lg:w-[400px]" src={green} alt="" />
+        
+          </div>
+
+          <div>
+            <h1 className="text-5xl text-white font-bold mb-4">
+              A Fresh Approach to Fitness
+            </h1>
+            <p className="text-white">
+              With 16+ years of experience in transformative fitness industry we
+              have distilled the common fitness concerns of urban lifestyle and
+              boiled them down to four fitness recovery programs. From weight
+              management to joint pain, for adolescent to senior citizens, our
+              bespoke solutions cater to individual convenience and aspirations.
+            </p>
+          </div>
         </div>
-
-        <div className="flex gap-10 font-bold border px-12 py-2 rounded-full">
-          <h2 className="text-white">Home</h2>
-          <h2 className="text-white">Service</h2>
-          <h2 className="text-white">Contact</h2>
-          <h2 className="text-white">About</h2>
-        </div>
-      </nav>
-
-
-
-
-
-
-
-
-
-           <nav className="flex items-center justify-between mb-12 py-3 container mx-auto">
-  <div>
-    <h1 className="font-samu text-3xl font-bold text-red-700">
-      Fitness Planet
-    </h1>
-  </div>
-
-  <div className="hidden lg:flex gap-10 font-bold border px-12 py-2 rounded-full">
-    <h2 className="text-white">Home</h2>
-    <h2 className="text-white">Service</h2>
-    <h2 className="text-white">Contact</h2>
-    <h2 className="text-white">About</h2>
-  </div>
-
-  <div className="z-40 lg:hidden flex items-center">
-    <button
-      className="text-white focus:outline-none"
-      onClick={() => setOpen(!open)}
-    >
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d={open ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'}
-        />
-      </svg>
-    </button>
-  </div>
-
-  <div className={`${
-    open ? 'block' : 'hidden'
-  } lg:hidden absolute top-16 right-0 w-full bg-gray-800`}>
-    <div className="flex flex-col items-center gap-4 py-6">
-      <h2 className="text-white">Home</h2>
-      <h2 className="text-white">Service</h2>
-      <h2 className="text-white">Contact</h2>
-      <h2 className="text-white">About</h2>
-    </div>
-  </div>
-</nav>
+      </section>
