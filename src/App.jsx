@@ -136,6 +136,36 @@ function App() {
         />
       </div>
 
+      {/* ########################### */}
+
+
+<section>
+  <div>
+    <h1 className="text-9xl text-white font-bold">About Us</h1>
+
+    <p>At Fitness Planet, we believe that fitness is a journey, not a destination. Our mission is to provide a welcoming and inclusive environment where everyone can achieve their fitness goals. Whether you're a seasoned athlete or just starting out, our team of dedicated professionals is here to support you every step of the way.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {/* ########################### */}
+
+
+
+
       {/* -------------------------------------------------------------------------------------- */}
       {/* Fitness Package */}
       <section className="exploreooo py-20 bg-fixed p">
