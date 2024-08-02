@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import banner from "/src/assets/Black and Red Gyms Back to Business Landscape Banner (1).png";
+import logogo from "../assets/aaaaaaaaaaaa1.png";
 
 const Banner = () => {
-
-    const [drawerOpen, setDrawerOpen] = useState(false);
-    return (
-        <>
-           {/* nav bar */}
-      <nav className="flex items-center justify-between mb-12 py-3 container mx-auto">
-        <div>
-          <h1 className="font-samu text-3xl font-bold text-red-700">
-            Fitness Planet
-          </h1>
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  return (
+    <>
+      {/* nav bar */}
+      <nav className="flex items-center justify-between  container mx-auto">
+        <div className="flex items-center">
+          <div>
+            <img className="w-52" src={logogo} alt="" />
+          </div>
+          <div className="hidden">
+            <h1 className="font-samu text-3xl font-bold text-red-700">
+              Fitness Planet
+            </h1>
+          </div>
         </div>
 
         <div className="hidden lg:flex gap-10 font-bold border px-12 py-2 rounded-full">
@@ -89,15 +94,19 @@ const Banner = () => {
       {/* -------------------------------------------------------------------------------------- */}
       {/* banner */}
       <div className="mb-1 lg:mb-12">
-        <img className=" relative md:relative lg:relative w-full" src={banner} alt="" />
+        <img
+          className=" relative md:relative lg:relative w-full"
+          src={banner}
+          alt=""
+        />
         <img
           className="absolute bottom-[360px] md:bottom-[450px] lg:-bottom-[420px] "
           src="https://i.ibb.co/CWC9rwM/bottom-reverse.png"
           alt=""
         />
       </div>
-        </>
-    );
+    </>
+  );
 };
 
 export default Banner;
