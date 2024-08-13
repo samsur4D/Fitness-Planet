@@ -80,6 +80,7 @@ background: linear-gradient(171deg, rgba(44,45,47,1) 48%, rgba(72,95,120,1) 100%
 }
 .concern{
   background-image: url('https://i.ibb.co/j5VpCyJ/artem-beliaikin-n-KCtka-W4-JU4-unsplash.jpg');
+  /* background-image: url(https://www.imghippo.com/i/1mb5N1723514328.jpg); */
   background-position: center;
   background-size: cover;
   border-radius: 2px;

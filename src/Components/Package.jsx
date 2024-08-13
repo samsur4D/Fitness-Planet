@@ -23,21 +23,19 @@ const Package = () => {
 
         <section className=" container mx-auto ">
           <div className="  gap-5 flex items-center justify-center  px-6 py-32 ">
-            {/* <img data-aos="fade-right" className=  "h-[230px] md:h-[500px] lg:h-[900px]" src={og} alt="" />
-            <img data-aos="zoom-in" className="     h-[230px] md:h-[500px] lg:h-[900px]   " src={red} alt="" />
-            <img data-aos="fade-left" className="   h-[230px] md:h-[500px] lg:h-[900px] " src={green} alt=""/> */}
+           
             <img
-              className="h-[230px] md:h-[500px] lg:h-[900px]"
+              className="h-[230px] md:h-[500px] lg:h-[900px] hover:scale-150 duration-700"
               src={og}
               alt=""
             />
             <img
-              className="     h-[230px] md:h-[500px] lg:h-[900px]   "
+              className="     h-[230px] md:h-[500px] lg:h-[900px] hover:scale-150 duration-700  "
               src={red}
               alt=""
             />
             <img
-              className="   h-[230px] md:h-[500px] lg:h-[900px] "
+              className="   h-[230px] md:h-[500px] lg:h-[900px]  hover:scale-150 duration-700"
               src={green}
               alt=""
             />
